@@ -1,0 +1,48 @@
+{
+  "name": "@australis/tiny-crypto",
+  "version": "0.1.0",
+  "description": "Simple passphrase base encryption implementation",
+  "private": false,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --env=node",
+    "build": "rimraf lib && tsc -p ."
+  },
+  "keywords": [
+    "node", "encryption", "simple", "aes"
+  ],
+  "author": "d10221",
+  "license": "MIT",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.9",
+    "jest": "23.6.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "23.10.4",
+    "ts-node": "^7.0.1",
+    "typescript": "3.1.6"
+  }
+}
